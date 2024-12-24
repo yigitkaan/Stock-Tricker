@@ -22,7 +22,7 @@ function renderStockTicker() {
   const stockDisplayTime = document.getElementById("time");
 
   const dataObject = getStockData();
-  const currentPrice = dataObject.price.toFixed(2);
+  const currentPrice = dataObject.price;
 
   stockDisplayName.textContent = dataObject.name;
   stockDisplaySymbol.textContent = dataObject.sym;
